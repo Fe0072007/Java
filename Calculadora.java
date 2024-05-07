@@ -1,7 +1,7 @@
 
 import java.util.Scanner;
 
-public class Main{
+public class Calculadora{
     
     Float Soma(float n1, float n2){
         
