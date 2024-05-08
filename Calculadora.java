@@ -31,6 +31,7 @@ public class Calculadora{
         return div;
         
     }
+
 	public static void main(String[] args) {
 	    
 	    Scanner myScanner = new Scanner(System.in);
@@ -49,29 +50,21 @@ public class Calculadora{
 	    
 	    
 	    
-	    if (op == 1){
+	    switch (op){
 	        
-    	    float soma = new Main().Soma(num1,num2);
-    	    
-    	    System.out.println("A soma de "+num1+ " e " +num2+ " é " +soma);
-    	    
-	    } else if (op == 2){
+	        case 1:
+	           float soma = new Calculadora().Soma(num1,num2);
+	           System.out.println(soma);
+	        case 2:
+	            float subtracao = new Calculadora().Subtracao(num1,num2);
+	            System.out.println(subtracao);
+	        case 3:
+	            float multiplicacao = new Calculadora().Multiplicacao(num1,num2);
+	            System.out.println(multiplicacao);
+	        case 4:
+	            float divisao = new Calculadora().Divisao(num1,num2);
+	            System.out.println(divisao);
 	        
-	        float subtracao = new Main().Subtracao(num1,num2);
-	        
-	        System.out.println("A subtração de " +num1+ " e " +num2+ " é " +subtracao);
-	        
-	    } else if (op == 3){
-	        
-	        float multiplicacao = new Main().Multiplicacao(num1,num2);
-	        
-	        System.out.println("A multiplicação de " +num1+ " e " +num2+ " é " +multiplicacao);
-	        
-	    } else if (op == 4){
-	        
-	        float divisao = new Main().Divisao(num1,num2);
-	        
-	        System.out.println("A divisão de " +num1+ " e " +num2+ " é " + divisao);
 	    }
-	}
+}
 }
