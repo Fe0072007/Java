@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Questao1{
+public class Media{
     
     float Media(float n1, float n2, float n3, float n4){
         
@@ -13,7 +13,7 @@ public class Questao1{
 		float nota2 = scnr.nextFloat();
 		float nota3 = scnr.nextFloat();
 		float nota4 = scnr.nextFloat();
-		float m = new Main().Media(nota1,nota2,nota3,nota4);
+		float m = new Media().Media(nota1,nota2,nota3,nota4);
 		System.out.println(m);
 	}
 }
